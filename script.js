@@ -45,11 +45,14 @@ function getHumanChoice(){
 let humanScore = 0;
 let computerScore = 0;
 
+// This is a Function for who win the game between human and computer 
+
 
 function playRound(humanChoice,computerChoice){
     
     console.log(`Player : ${humanChoice}. Computer : ${computerChoice}`)
     if (humanChoice === computerChoice){ 
+        return "This Round is Draw"
 }else if(humanChoice === "rock" && computerChoice === "scissor" || humanChoice === "paper" && computerChoice === "rock"|| humanChoice === "scissor" && computerChoice === "paper"){
     humanScore++
     return "Player won the Game"
